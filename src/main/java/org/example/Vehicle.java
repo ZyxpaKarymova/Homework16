@@ -1,6 +1,6 @@
 package org.example;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements ServiceStationInterface{
     private final String modelName;
     private final int wheelsCount;
 
@@ -16,7 +16,22 @@ public abstract class Vehicle {
     public int getWheelsCount() {
         return wheelsCount;
     }
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    private void updateTyre() {
+
+
+        for (int i=0;i<wheelsCount;i++) {
+            System.out.println("Меняем покрышку");
+        }
+    }
+
+@Override
+    public void check() {
+        System.out.println("Обслуживаем: " + modelName);
+        updateTyre();
+    }
+
+    @Override
+    public void info() {
+        System.out.println(modelName+" "+ wheelsCount);
     }
 }
