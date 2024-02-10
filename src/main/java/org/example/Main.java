@@ -7,7 +7,6 @@ public class Main {
         Car car = new Car("car1", 4);
         Car car2 = new Car("car2", 4);
 
-
         Truck truck = new Truck("truck1", 6);
         Truck truck2 = new Truck("truck2", 6);
 
@@ -22,8 +21,5 @@ public class Main {
         serviceStation.checkVehicle(bicycle);
         System.out.println();
         serviceStation.info(bicycle);
-
-
-
     }
 }
