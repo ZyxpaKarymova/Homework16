@@ -17,8 +17,6 @@ public abstract class Vehicle implements ServiceStationInterface{
         return wheelsCount;
     }
     private void updateTyre() {
-
-
         for (int i=0;i<wheelsCount;i++) {
             System.out.println("Меняем покрышку");
         }

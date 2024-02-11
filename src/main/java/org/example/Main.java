@@ -20,6 +20,5 @@ public class Main {
         System.out.println();
         serviceStation.checkVehicle(bicycle);
         System.out.println();
-        serviceStation.info(bicycle);
     }
 }
