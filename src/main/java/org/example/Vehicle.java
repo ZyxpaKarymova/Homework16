@@ -24,7 +24,7 @@ public abstract class Vehicle implements ServiceStationInterface{
 
 @Override
     public void check() {
-        System.out.println("Обслуживаем: " + modelName);
+        System.out.println("Обслуживаем: " + modelName+".");
         updateTyre();
     }
 
